@@ -1,5 +1,5 @@
 //
-//  HelloWorldScene.h
+//  HRootScene.h
 //
 //  Created by : haiMac
 //  Project    : PlayCats
@@ -16,7 +16,7 @@
 
 // -----------------------------------------------------------------------
 
-@interface HelloWorldScene : CCScene
+@interface RootScene : CCScene
 
 // -----------------------------------------------------------------------
 

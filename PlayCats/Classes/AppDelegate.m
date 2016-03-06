@@ -11,7 +11,7 @@
 // -----------------------------------------------------------------
 
 #import "AppDelegate.h"
-#import "HelloWorldScene.h"
+#import "RootScene.h"
 
 // -----------------------------------------------------------------------
 
@@ -46,6 +46,7 @@
     // Show FPS
     // We really want this when developing an app
     [startUpOptions setObject:@(YES) forKey:CCSetupShowDebugStats];
+    [startUpOptions setObject:CCScreenOrientationPortrait forKey:CCSetupScreenOrientation];
     
     // A acouple of other examples
     
@@ -67,7 +68,10 @@
     // We are done ...
     // Lets get this thing on the road!
     [self setupCocos2dWithOptions:startUpOptions];
-	
+    /*[self setupCocos2dWithOptions:@{
+                                    CCSetupShowDebugStats: @(YES),
+                                    CCSetupScreenOrientation: CCScreenOrientationPortrait,
+                                    }];*/
     // Stay positive. Always return a YES :)
 	return YES;
 }
@@ -77,7 +81,7 @@
 
 - (CCScene *)startScene
 {
-	return [HelloWorldScene new];
+	return [RootScene new];
 }
 
 // -----------------------------------------------------------------------

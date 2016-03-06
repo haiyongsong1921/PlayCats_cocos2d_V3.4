@@ -1,5 +1,5 @@
 //
-//  HelloWorldScene.m
+//  RootScene
 //
 //  Created by : haiMac
 //  Project    : PlayCats
@@ -10,11 +10,12 @@
 //
 // -----------------------------------------------------------------
 
-#import "HelloWorldScene.h"
+#import "RootScene.h"
+#import "BackgroundLayer.h"
 
 // -----------------------------------------------------------------------
 
-@implementation HelloWorldScene
+@implementation RootScene
 
 // -----------------------------------------------------------------------
 
@@ -27,6 +28,7 @@
     // Just make an assert, so that you can catch it in debug
     NSAssert(self, @"Whoops");
     
+    /*
     // Background
     CCSprite9Slice *background = [CCSprite9Slice spriteWithImageNamed:@"white_square.png"];
     background.anchorPoint = CGPointZero;
@@ -39,7 +41,9 @@
     label.positionType = CCPositionTypeNormalized;
     label.position = (CGPoint){0.5, 0.5};
     [self addChild:label];
-    
+    */
+    BackgroundLayer* backgroud = [[BackgroundLayer alloc] init];
+    [self addChild:backgroud];
     // done
     return self;
 }

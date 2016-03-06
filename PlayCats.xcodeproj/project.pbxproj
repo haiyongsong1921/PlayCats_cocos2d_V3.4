@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049034641C8B14D3007C5728 /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 049034631C8B14D3007C5728 /* BackgroundLayer.m */; };
+		049034691C8C5A83007C5728 /* PlayCatsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 049034681C8C5A83007C5728 /* PlayCatsLayer.m */; };
 		04B087AA1C87B3380094D6D3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B087A91C87B3380094D6D3 /* Default.png */; };
 		04B087AC1C87B3380094D6D3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B087AB1C87B3380094D6D3 /* Default@2x.png */; };
 		04B087AE1C87B3380094D6D3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B087AD1C87B3380094D6D3 /* Default-568h@2x.png */; };
@@ -203,11 +205,18 @@
 		04B08A571C87B33B0094D6D3 /* LICENSE_Chipmunk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A561C87B33B0094D6D3 /* LICENSE_Chipmunk.txt */; };
 		04B08A5B1C87B33B0094D6D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B08A5A1C87B33B0094D6D3 /* main.m */; };
 		04B08A5F1C87B33B0094D6D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B08A5E1C87B33B0094D6D3 /* AppDelegate.m */; };
-		04B08A621C87B33B0094D6D3 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B08A611C87B33B0094D6D3 /* HelloWorldScene.m */; };
+		04B08A621C87B33B0094D6D3 /* RootScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B08A611C87B33B0094D6D3 /* RootScene.m */; };
 		04B08A641C87B33B0094D6D3 /* white_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A631C87B33B0094D6D3 /* white_square.png */; };
+		04B08A711C886B320094D6D3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A6E1C886B320094D6D3 /* background.png */; };
+		04B08A721C886B320094D6D3 /* cats.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A6F1C886B320094D6D3 /* cats.plist */; };
+		04B08A731C886B320094D6D3 /* cats.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A701C886B320094D6D3 /* cats.pvr.ccz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049034621C8B14D3007C5728 /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundLayer.h; path = Classes/Layer/BackgroundLayer.h; sourceTree = "<group>"; };
+		049034631C8B14D3007C5728 /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackgroundLayer.m; path = Classes/Layer/BackgroundLayer.m; sourceTree = "<group>"; };
+		049034671C8C5A83007C5728 /* PlayCatsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayCatsLayer.h; path = Classes/Layer/PlayCatsLayer.h; sourceTree = "<group>"; };
+		049034681C8C5A83007C5728 /* PlayCatsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayCatsLayer.m; path = Classes/Layer/PlayCatsLayer.m; sourceTree = "<group>"; };
 		04B087A21C87B3380094D6D3 /* PlayCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B087A61C87B3380094D6D3 /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveChipmunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B087A91C87B3380094D6D3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
@@ -661,9 +670,12 @@
 		04B08A5A1C87B33B0094D6D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		04B08A5D1C87B33B0094D6D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		04B08A5E1C87B33B0094D6D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		04B08A601C87B33B0094D6D3 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		04B08A611C87B33B0094D6D3 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
+		04B08A601C87B33B0094D6D3 /* RootScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootScene.h; path = Classes/RootScene.h; sourceTree = "<group>"; };
+		04B08A611C87B33B0094D6D3 /* RootScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootScene.m; path = Classes/RootScene.m; sourceTree = "<group>"; };
 		04B08A631C87B33B0094D6D3 /* white_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_square.png; path = Resources/white_square.png; sourceTree = "<group>"; };
+		04B08A6E1C886B320094D6D3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Resources/background.png; sourceTree = "<group>"; };
+		04B08A6F1C886B320094D6D3 /* cats.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = cats.plist; path = Resources/cats.plist; sourceTree = "<group>"; };
+		04B08A701C886B320094D6D3 /* cats.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = cats.pvr.ccz; path = Resources/cats.pvr.ccz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -678,6 +690,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049034651C8B14ED007C5728 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				049034621C8B14D3007C5728 /* BackgroundLayer.h */,
+				049034631C8B14D3007C5728 /* BackgroundLayer.m */,
+				049034671C8C5A83007C5728 /* PlayCatsLayer.h */,
+				049034681C8C5A83007C5728 /* PlayCatsLayer.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
 		04B087991C87B3380094D6D3 = {
 			isa = PBXGroup;
 			children = (
@@ -710,6 +733,9 @@
 		04B087A81C87B3380094D6D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04B08A6E1C886B320094D6D3 /* background.png */,
+				04B08A6F1C886B320094D6D3 /* cats.plist */,
+				04B08A701C886B320094D6D3 /* cats.pvr.ccz */,
 				04B087A91C87B3380094D6D3 /* Default.png */,
 				04B087AB1C87B3380094D6D3 /* Default@2x.png */,
 				04B087AD1C87B3380094D6D3 /* Default-568h@2x.png */,
@@ -1540,10 +1566,11 @@
 		04B08A5C1C87B33B0094D6D3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				049034651C8B14ED007C5728 /* Layers */,
 				04B08A5D1C87B33B0094D6D3 /* AppDelegate.h */,
 				04B08A5E1C87B33B0094D6D3 /* AppDelegate.m */,
-				04B08A601C87B33B0094D6D3 /* HelloWorldScene.h */,
-				04B08A611C87B33B0094D6D3 /* HelloWorldScene.m */,
+				04B08A601C87B33B0094D6D3 /* RootScene.h */,
+				04B08A611C87B33B0094D6D3 /* RootScene.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1629,6 +1656,8 @@
 				04B087B51C87B3380094D6D3 /* Icon@2x.png in Resources */,
 				04B087C71C87B3380094D6D3 /* Icon-Small@2x.png in Resources */,
 				04B087B91C87B3380094D6D3 /* Icon-72@2x.png in Resources */,
+				04B08A711C886B320094D6D3 /* background.png in Resources */,
+				04B08A721C886B320094D6D3 /* cats.plist in Resources */,
 				04B087AA1C87B3380094D6D3 /* Default.png in Resources */,
 				04B087B31C87B3380094D6D3 /* Icon.png in Resources */,
 				04B087C11C87B3380094D6D3 /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
@@ -1639,6 +1668,7 @@
 				04B087B71C87B3380094D6D3 /* Icon-72.png in Resources */,
 				04B088B21C87B3390094D6D3 /* LICENSE_cocos2d.txt in Resources */,
 				04B088B51C87B3390094D6D3 /* CCEffectRenderer.h in Resources */,
+				04B08A731C886B320094D6D3 /* cats.pvr.ccz in Resources */,
 				04B087AE1C87B3380094D6D3 /* Default-568h@2x.png in Resources */,
 				04B087CE1C87B3380094D6D3 /* iTunesArtwork in Resources */,
 				04B0898C1C87B33A0094D6D3 /* LICENSE_CCBReader.txt in Resources */,
@@ -1671,6 +1701,7 @@
 				04B089B11C87B33A0094D6D3 /* ALCaptureDevice.m in Sources */,
 				04B0886B1C87B3390094D6D3 /* CCPhysicsShape.m in Sources */,
 				04B089531C87B33A0094D6D3 /* CCColor.m in Sources */,
+				049034691C8C5A83007C5728 /* PlayCatsLayer.m in Sources */,
 				04B088291C87B3390094D6D3 /* CCDrawNode.m in Sources */,
 				04B089791C87B33A0094D6D3 /* CCBAnimationManager.m in Sources */,
 				04B088681C87B3390094D6D3 /* CCPhysicsNode.m in Sources */,
@@ -1683,7 +1714,7 @@
 				04B088F91C87B33A0094D6D3 /* CCEffectNode.m in Sources */,
 				04B088F61C87B33A0094D6D3 /* CCEffectPixellate.m in Sources */,
 				04B0881D1C87B3390094D6D3 /* CCClippingNode.m in Sources */,
-				04B08A621C87B33B0094D6D3 /* HelloWorldScene.m in Sources */,
+				04B08A621C87B33B0094D6D3 /* RootScene.m in Sources */,
 				04B089761C87B33A0094D6D3 /* CCAnimationManager.m in Sources */,
 				04B088FC1C87B33A0094D6D3 /* CCEffectStack.m in Sources */,
 				04B088B01C87B3390094D6D3 /* cocos2d.m in Sources */,
@@ -1788,6 +1819,7 @@
 				04B088021C87B3390094D6D3 /* CCActionEase.m in Sources */,
 				04B089451C87B33A0094D6D3 /* CCWindow.m in Sources */,
 				04B089351C87B33A0094D6D3 /* CCGLView.m in Sources */,
+				049034641C8B14D3007C5728 /* BackgroundLayer.m in Sources */,
 				04B088911C87B3390094D6D3 /* CCSpriteFrameCache.m in Sources */,
 				04B088811C87B3390094D6D3 /* CCScheduler.m in Sources */,
 				04B0883B1C87B3390094D6D3 /* CCLayout.m in Sources */,
@@ -1998,6 +2030,7 @@
 				04B08A691C87B33B0094D6D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04B08A6A1C87B33B0094D6D3 /* Build configuration list for PBXNativeTarget "ObjectiveChipmunk" */ = {
 			isa = XCConfigurationList;
@@ -2006,6 +2039,7 @@
 				04B08A6C1C87B33B0094D6D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
