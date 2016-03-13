@@ -68,10 +68,6 @@
     // We are done ...
     // Lets get this thing on the road!
     [self setupCocos2dWithOptions:startUpOptions];
-    /*[self setupCocos2dWithOptions:@{
-                                    CCSetupShowDebugStats: @(YES),
-                                    CCSetupScreenOrientation: CCScreenOrientationPortrait,
-                                    }];*/
     // Stay positive. Always return a YES :)
 	return YES;
 }

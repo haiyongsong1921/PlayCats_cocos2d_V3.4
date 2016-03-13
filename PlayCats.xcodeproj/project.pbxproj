@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0444DE3C1C951C0000CFB652 /* cats.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0444DE3A1C951C0000CFB652 /* cats.plist */; };
+		0444DE3D1C951C0000CFB652 /* cats.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 0444DE3B1C951C0000CFB652 /* cats.pvr.ccz */; };
 		049034641C8B14D3007C5728 /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 049034631C8B14D3007C5728 /* BackgroundLayer.m */; };
 		049034691C8C5A83007C5728 /* PlayCatsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 049034681C8C5A83007C5728 /* PlayCatsLayer.m */; };
 		04B087AA1C87B3380094D6D3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B087A91C87B3380094D6D3 /* Default.png */; };
@@ -208,11 +210,11 @@
 		04B08A621C87B33B0094D6D3 /* RootScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B08A611C87B33B0094D6D3 /* RootScene.m */; };
 		04B08A641C87B33B0094D6D3 /* white_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A631C87B33B0094D6D3 /* white_square.png */; };
 		04B08A711C886B320094D6D3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A6E1C886B320094D6D3 /* background.png */; };
-		04B08A721C886B320094D6D3 /* cats.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A6F1C886B320094D6D3 /* cats.plist */; };
-		04B08A731C886B320094D6D3 /* cats.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 04B08A701C886B320094D6D3 /* cats.pvr.ccz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0444DE3A1C951C0000CFB652 /* cats.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = cats.plist; path = Resources/CatsIcon/cats.plist; sourceTree = "<group>"; };
+		0444DE3B1C951C0000CFB652 /* cats.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = cats.pvr.ccz; path = Resources/CatsIcon/cats.pvr.ccz; sourceTree = "<group>"; };
 		049034621C8B14D3007C5728 /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundLayer.h; path = Classes/Layer/BackgroundLayer.h; sourceTree = "<group>"; };
 		049034631C8B14D3007C5728 /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackgroundLayer.m; path = Classes/Layer/BackgroundLayer.m; sourceTree = "<group>"; };
 		049034671C8C5A83007C5728 /* PlayCatsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayCatsLayer.h; path = Classes/Layer/PlayCatsLayer.h; sourceTree = "<group>"; };
@@ -674,8 +676,6 @@
 		04B08A611C87B33B0094D6D3 /* RootScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootScene.m; path = Classes/RootScene.m; sourceTree = "<group>"; };
 		04B08A631C87B33B0094D6D3 /* white_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_square.png; path = Resources/white_square.png; sourceTree = "<group>"; };
 		04B08A6E1C886B320094D6D3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Resources/background.png; sourceTree = "<group>"; };
-		04B08A6F1C886B320094D6D3 /* cats.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = cats.plist; path = Resources/cats.plist; sourceTree = "<group>"; };
-		04B08A701C886B320094D6D3 /* cats.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = cats.pvr.ccz; path = Resources/cats.pvr.ccz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -733,9 +733,9 @@
 		04B087A81C87B3380094D6D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0444DE3A1C951C0000CFB652 /* cats.plist */,
+				0444DE3B1C951C0000CFB652 /* cats.pvr.ccz */,
 				04B08A6E1C886B320094D6D3 /* background.png */,
-				04B08A6F1C886B320094D6D3 /* cats.plist */,
-				04B08A701C886B320094D6D3 /* cats.pvr.ccz */,
 				04B087A91C87B3380094D6D3 /* Default.png */,
 				04B087AB1C87B3380094D6D3 /* Default@2x.png */,
 				04B087AD1C87B3380094D6D3 /* Default-568h@2x.png */,
@@ -1657,7 +1657,7 @@
 				04B087C71C87B3380094D6D3 /* Icon-Small@2x.png in Resources */,
 				04B087B91C87B3380094D6D3 /* Icon-72@2x.png in Resources */,
 				04B08A711C886B320094D6D3 /* background.png in Resources */,
-				04B08A721C886B320094D6D3 /* cats.plist in Resources */,
+				0444DE3C1C951C0000CFB652 /* cats.plist in Resources */,
 				04B087AA1C87B3380094D6D3 /* Default.png in Resources */,
 				04B087B31C87B3380094D6D3 /* Icon.png in Resources */,
 				04B087C11C87B3380094D6D3 /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
@@ -1668,7 +1668,7 @@
 				04B087B71C87B3380094D6D3 /* Icon-72.png in Resources */,
 				04B088B21C87B3390094D6D3 /* LICENSE_cocos2d.txt in Resources */,
 				04B088B51C87B3390094D6D3 /* CCEffectRenderer.h in Resources */,
-				04B08A731C886B320094D6D3 /* cats.pvr.ccz in Resources */,
+				0444DE3D1C951C0000CFB652 /* cats.pvr.ccz in Resources */,
 				04B087AE1C87B3380094D6D3 /* Default-568h@2x.png in Resources */,
 				04B087CE1C87B3380094D6D3 /* iTunesArtwork in Resources */,
 				04B0898C1C87B33A0094D6D3 /* LICENSE_CCBReader.txt in Resources */,
@@ -1891,7 +1891,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1911,7 +1911,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

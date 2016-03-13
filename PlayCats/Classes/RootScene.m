@@ -12,6 +12,7 @@
 
 #import "RootScene.h"
 #import "BackgroundLayer.h"
+#import "PlayCatsLayer.h"
 
 // -----------------------------------------------------------------------
 
@@ -44,6 +45,9 @@
     */
     BackgroundLayer* backgroud = [[BackgroundLayer alloc] init];
     [self addChild:backgroud];
+    
+    PlayCatsLayer* playCatsLayer = [[PlayCatsLayer alloc] init];
+    [self addChild:playCatsLayer];
     // done
     return self;
 }

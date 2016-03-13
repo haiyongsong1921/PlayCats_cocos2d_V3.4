@@ -16,13 +16,19 @@
     NSAssert(self, @"PlayCatsLayer create failed");
     
     //sprite sheet
-    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"cats.plist"];
-    CCParticleBatchNode* spritesCatsNode = [CCParticleBatchNode batchNodeWithFile:@"cats.pvr.ccz"];
+    CCSpriteBatchNode* spritesCatsNode = [CCSpriteBatchNode batchNodeWithFile:@"cats.pvr.ccz"];
     [self addChild:spritesCatsNode];
     
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"cats.plist"];
+    CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:@"cat1.png"];
+    CCSprite* testSprite = [CCSprite spriteWithSpriteFrame:spriteFrame];
+    //testSprite = [CCSprite spriteWithImageNamed:@"cat1.png"];
     
-    CCSpriteFrame* spriteFrame = [CCSpriteFrame ]
-    CCSprite* testSprite = [CCSprite spriteWithSpriteFrame:<#(CCSpriteFrame *)#>]
+    
+    testSprite.anchorPoint = CGPointZero;
+    CGSize viewSize = [CCDirector sharedDirector].viewSize;
+    testSprite.position = ccp(viewSize.width/2, viewSize.height/2);
+    [spritesCatsNode addChild:testSprite];
     
     
     

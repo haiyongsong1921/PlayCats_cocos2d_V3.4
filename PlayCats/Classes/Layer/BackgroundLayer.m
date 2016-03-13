@@ -20,7 +20,12 @@
     //bk ground
     CCSprite* backgroundSprite = [CCSprite spriteWithImageNamed:@"background.png"];
     backgroundSprite.anchorPoint = CGPointZero;
-    backgroundSprite.contentSize = [CCDirector sharedDirector].viewSize;
+   // [backgroundSprite setPosition:ccp(0, 0)];
+    CGSize viewSize = [CCDirector sharedDirector].viewSize;
+    CGSize scrSize = {640, 1136};
+    
+    backgroundSprite.scaleX = viewSize.width/scrSize.width;
+    backgroundSprite.scaleY = viewSize.height/scrSize.height;
     [self addChild:backgroundSprite];
     
     return self;
